@@ -1,0 +1,81 @@
+#map{width:100%;height:100vh;}
+body{margin:0;padding:0;font-family: 'Roboto Condensed', sans-serif;}
+h4, h5, table, p{font-family: 'Roboto Condensed', sans-serif !important;}
+
+.loader{
+    width:100%;
+    height:100%;
+    background-color: #fff;
+    padding-top:30px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10000;
+}
+.loadtext{
+    color:#555;
+    text-align: center;
+}
+
+.leaflet-popup-content table {max-width:100%;padding:0 5px;font-size:13px;}
+table th, table td {border:1px solid #eee;padding:3px;text-align: center;}
+
+.key {
+  	position:absolute;
+   	bottom:20px;
+   	right:10px;
+   	line-height: 18px;
+   	color: #555;
+   	border-radius: 10px;
+  	background: rgba(255,255,255,0.8);
+   	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+   	padding:10px;
+   	max-width:350px;
+}
+.key i {
+	font-style: normal;
+	display: inline-block;
+	font-size: 13px;
+}
+.key p {font-size: 13px;}
+
+.boxed{
+	width:4px;
+	height:4px;
+	border:1px solid #ddd;
+	margin:0 5px;
+}
+
+.lowest{background-color:#f21202;}
+.low{background-color:#ef5f21;}
+.high{background-color:#ede20e;}
+.highest{background-color:#9bd608;}
+
+.title{
+	position: absolute;
+	z-index: 1000;
+	left:80px;
+	top:2px;
+	width:30%;
+	/*background-color:rgba(255,255,255,0.5);*/
+	padding: 0;
+	text-shadow: 1px 1px 1px #303030;
+}
+.title a, .title button {
+	margin:17px 0px 10px 10px;
+}
+
+#close{}
+.open{
+	color:#fff;
+	font-size:12px;
+}
+.padded{padding:4px;border:1px solid #aaa;font-size:12px;}
+
+#info-panel::-webkit-scrollbar { width: 0 !important }
+
+.statelabel{
+  color:black;
+  font-size: 10px;
+  text-align: center;
+}
