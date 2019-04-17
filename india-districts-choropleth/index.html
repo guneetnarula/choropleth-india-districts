@@ -11,11 +11,6 @@
   	integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
   	crossorigin=""></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<script src="js/leaflet.geocsv.js"></script>
-		<script src="js/india_dist_662.js"></script>
-		<script src="js/states.js"></script>
-		<script src="js/sample_data.js"></script>
-		<script src="js/choropleth.js"></script>
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,700' rel='stylesheet' type='text/css'>
@@ -30,21 +25,15 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-12">
-					<div class="loader">
-                  <h3 class="loadtext"><i class="fa fa-spinner fa-spin"></i> Loading data, please wait..</h3>
-          </div>
-			  	<div id="map"></div>
-					<div class="title">
-						<h1>A Simple Choropleth</h1>
-					</div>
-					<div class="key">
-
-				  </div>
+					<div data-behaviour="choropleth-map"></div>
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript">
-			$(document).ready(runmap);
-		</script>
+
   </body>
 </html>
+<script src="js/leaflet.geocsv.js"></script>
+<script src="js/india_dist_662.js"></script>
+<script src="js/states.js"></script>
+<script src="js/sample_data.js"></script>
+<script src="js/choropleth.js?v=1.0"></script>
