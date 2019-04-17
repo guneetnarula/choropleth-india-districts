@@ -106,7 +106,11 @@
         //DISTRICT HIGHLIGHT ON MOUSEOVER
         var layer = e.target;
 
-        layer.setStyle( { fillOpacity: 0.3 } );
+        layer.setStyle( {
+          weight: 3,
+          color: 'yellow',
+          opacity: 0.9
+        } );
         if ( !L.Browser.ie && !L.Browser.opera ) {
           layer.bringToFront();
         }
@@ -116,7 +120,9 @@
           //RESET HIGHLIGHT ON MOUSEOUT
           var layer = e.target;
           layer.setStyle({
-            fillOpacity: 0.6
+            weight: 1,
+            color: 'black',
+            opacity: 0.4
           });
       }
 
